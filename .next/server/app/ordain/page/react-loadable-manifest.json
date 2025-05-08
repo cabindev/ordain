@@ -1,0 +1,12 @@
+{
+  "[project]/app/components/OrdainStats.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/app/components/OrdainStats.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/node_modules_lodash_90f72504._.js",
+      "static/chunks/node_modules_recharts_es6_5c6abf23._.js",
+      "static/chunks/node_modules_2559c7e6._.js",
+      "static/chunks/app_components_b37ea56e._.js",
+      "static/chunks/app_components_OrdainStats_tsx_ab160b4f._.js"
+    ]
+  }
+}

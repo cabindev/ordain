@@ -1,0 +1,19 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/app/about/page": [
+      "static/media/nKKZ_Go6G5tXcraVGwCKd6xB-s.p.addbe4c8.woff2",
+      "static/media/nKKU_Go6G5tXcr5mOBWzVaFrNlJzIu4-s.p.0809adb3.woff2",
+      "static/media/nKKU_Go6G5tXcr5KPxWnVaFrNlJz-s.p.7911c0dc.woff2",
+      "static/media/nKKU_Go6G5tXcr4uPhWnVaFrNlJz-s.p.ddf85077.woff2",
+      "static/media/nKKU_Go6G5tXcr4_ORWzVaFrNlJzIu4-s.p.c087e1c2.woff2",
+      "static/media/nKKU_Go6G5tXcr4_ORWnVaFrNlJz-s.p.fe6667bc.woff2",
+      "static/media/nKKZ_Go6G5tXcraBGwCKd6xBDFs-s.p.0d35a582.woff2",
+      "static/media/nKKU_Go6G5tXcr4uPhWzVaFrNlJzIu4-s.p.5521b53e.woff2",
+      "static/media/nKKU_Go6G5tXcr5mOBWnVaFrNlJz-s.p.21d6f152.woff2",
+      "static/media/nKKU_Go6G5tXcr5KPxWzVaFrNlJzIu4-s.p.869d836b.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pagesUsingSizeAdjust": false
+}

@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  /* สีหลักจากโลโก้ */
+  --gold-light: #EACE5C;
+  --gold-primary: #D4AF37;
+  --gold-dark: #9f7f24;
+  --brown-primary: #6B4C15;
+  --brown-dark: #4d370f;
+  --orange-light: #FF9E5C;
+  --orange-primary: #FF7E33;
+  
+  /* สีพื้นฐาน */
+  --background: #ffffff;
+  --foreground: #171717;
+  --gray-light: #f3f4f6;
+  --gray-medium: #d1d5db;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4) 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.brown-gradient {
+  background: linear-gradient(135deg, var(--brown-primary) 0%, var(--brown-dark) 100%);
+}
+
+.diagonal-pattern {
+  background-image: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 25%, transparent 25%, transparent 50%, rgba(212, 175, 55, 0.1) 50%, rgba(212, 175, 55, 0.1) 75%, transparent 75%, transparent);
+  background-size: 30px 30px;
+}
+
+/* loading */
+@keyframes progressBar {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 70%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.animate-progressBar {
+  animation: progressBar 2s ease-in-out infinite;
+}
