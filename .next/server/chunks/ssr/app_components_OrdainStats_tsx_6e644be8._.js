@@ -16,7 +16,7 @@ __turbopack_context__.v((parentImport) => {
   "server/chunks/ssr/node_modules_echarts_lib_chart_a4a99503._.js",
   "server/chunks/ssr/node_modules_echarts_lib_coord_005a3394._.js",
   "server/chunks/ssr/node_modules_echarts_lib_1252b42f._.js",
-  "server/chunks/ssr/node_modules_741eb6f7._.js"
+  "server/chunks/ssr/node_modules_tslib_tslib_es6_baa8bdb4.js"
 ].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
         return parentImport("[project]/app/components/OrdainStats.tsx [app-ssr] (ecmascript, next/dynamic entry)");
     });

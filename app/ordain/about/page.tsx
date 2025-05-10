@@ -138,10 +138,10 @@ export default function AboutPage() {
           สร้างความตระหนักในการอนุรักษ์ประเพณีอันดีงาม และส่งเสริมสุขภาวะที่ดีของชุมชน
         </p>
         <div className="flex justify-center space-x-4">
-          <button className="bg-gold-primary hover:bg-gold-dark text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-lg">
+          <button className="bg-gold-primary hover:bg-gold-dark text-black font-bold py-3 px-6 rounded-lg transition-colors shadow-lg">
             สนับสนุนโครงการ
           </button>
-          <Link href="/contact" className="bg-orange-primary hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-lg">
+          <Link href="/ordain/contact" className="bg-orange-primary hover:bg-orange-600 text-black font-bold py-3 px-6 rounded-lg transition-colors shadow-lg">
             ติดต่อเรา
           </Link>
         </div>

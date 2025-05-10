@@ -151,33 +151,6 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gradient-to-b from-[var(--brown-dark)] to-black text-white py-10">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row md:justify-between">
-            <div className="mb-6 md:mb-0">
-              <div className="mb-4 text-xl font-bold text-[var(--gold-primary)]">
-                SDN สำนักงานเครือข่ายงดเหล้า
-              </div>
-              <p className="max-w-md text-gray-300">
-                สำนักงานเครือข่ายองค์กรงดเหล้า ทำงานขับเคลื่อนนโยบายสาธารณะเพื่อลดปัญหาจากเครื่องดื่มแอลกอฮอล์
-              </p>
-            </div>
-            
-            <div>
-              <h3 className="text-lg font-semibold mb-4">ติดต่อเรา</h3>
-              <p className="text-gray-300">36 ซอยโพธิ์แก้ว 3 แยก 13 ถ.โพธิ์แก้ว</p>
-              <p className="text-gray-300">แขวงคลองจั่น เขตบางกะปิ กทม. 10240</p>
-              <p className="text-gray-300">โทร: 081-208-1899</p>
-            </div>
-          </div>
-          
-          <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
-            <p>© {new Date().getFullYear()} สำนักงานเครือข่ายองค์กรงดเหล้า. สงวนลิขสิทธิ์</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

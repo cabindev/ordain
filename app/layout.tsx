@@ -2,6 +2,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 export const metadata: Metadata = {
   title: 'โครงการบวชสร้างสุข | สำนักงานเครือข่ายงดเหล้า',
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

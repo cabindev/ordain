@@ -50,42 +50,7 @@ export default function OrdainStatsPage() {
             </div>
           </div>
         </div>
-        
-        {/* ส่วนแสดงข้อมูลสถิติตัวเลขสรุป - ตามต้นแบบ */}
-        <div className="bg-[#FFF9E3] rounded-xl shadow-lg overflow-hidden mb-12 border border-[var(--gold-light)]">
-          <h2 className="text-xl font-bold text-[var(--brown-primary)] px-6 py-3 flex items-center border-b border-[var(--gold-light)]">
-            <span className="inline-block w-1 h-6 bg-[var(--gold-primary)] mr-3 rounded-sm"></span>
-            ภาพรวมการดำเนินงาน
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 divide-x divide-[var(--gold-light)]">
-            <div className="p-6 text-center relative">
-              <div className="absolute top-4 right-4 h-8 w-8 flex items-center justify-center bg-[var(--gold-primary)] bg-opacity-25 text-[var(--gold-primary)] rounded-full">
-                <FaMapMarkerAlt />
-              </div>
-              <div className="mb-2 text-[var(--brown-primary)] font-medium">พื้นที่ดำเนินการ</div>
-              <div className="text-4xl font-bold text-[var(--gold-primary)]">170<span className="text-xl">+</span></div>
-              <div className="text-sm text-gray-600 mt-1">พื้นที่ทั่วประเทศ</div>
-            </div>
-            
-            <div className="p-6 text-center relative">
-              <div className="absolute top-4 right-4 h-8 w-8 flex items-center justify-center bg-[var(--orange-primary)] bg-opacity-25 text-[var(--orange-primary)] rounded-full">
-                <FaPrayingHands />
-              </div>
-              <div className="mb-2 text-[var(--brown-primary)] font-medium">พระต้นแบบ</div>
-              <div className="text-4xl font-bold text-[var(--orange-primary)]">450<span className="text-xl">+</span></div>
-              <div className="text-sm text-gray-600 mt-1">รูป</div>
-            </div>
-            
-            <div className="p-6 text-center relative">
-              <div className="absolute top-4 right-4 h-8 w-8 flex items-center justify-center bg-[var(--brown-primary)] bg-opacity-25 text-[var(--brown-primary)] rounded-full">
-                <FaWineBottle />
-              </div>
-              <div className="mb-2 text-[var(--brown-primary)] font-medium">งานบวชปลอดเหล้า</div>
-              <div className="text-4xl font-bold text-[var(--brown-dark)]">350<span className="text-xl">+</span></div>
-              <div className="text-sm text-gray-600 mt-1">งาน</div>
-            </div>
-          </div>
-        </div>
+
 
         {/* ส่วนแสดงรายละเอียดกราฟ - ลดความซ้ำซ้อน */}
         <div className="mt-8 relative">
@@ -93,17 +58,6 @@ export default function OrdainStatsPage() {
           <OrdainStatsClient hideTitle={true} />
         </div>
         
-        {/* Footer */}
-        <div className="mt-12 pt-6 border-t border-[var(--gold-light)] text-center">
-          <p className="text-sm text-gray-600">
-            ข้อมูลปรับปรุงล่าสุด: พฤษภาคม 2567
-          </p>
-          <div className="mt-4 flex justify-center">
-            <Link href="https://sdnthailand.com" target="_blank" rel="noopener noreferrer" className="text-sm text-[var(--brown-primary)] hover:text-[var(--gold-primary)] transition-colors duration-300">
-              สำนักงานเครือข่ายงดเหล้า
-            </Link>
-          </div>
-        </div>
       </div>
     </div>
   );

@@ -62,6 +62,7 @@ export async function GET(req: Request) {
             unit: "พื้นที่",
           },
           regionalData: [],
+          provinceData: [], // เพิ่มข้อมูลจังหวัด
         }, 
         source: 'error_fallback',
         error: {

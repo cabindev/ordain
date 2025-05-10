@@ -11,7 +11,7 @@
   "static/chunks/node_modules_echarts_lib_chart_07101e1d._.js",
   "static/chunks/node_modules_echarts_lib_coord_d8241bf9._.js",
   "static/chunks/node_modules_echarts_lib_489644ae._.js",
-  "static/chunks/node_modules_e9cff632._.js"
+  "static/chunks/node_modules_4344a588._.js"
 ],
     source: "dynamic"
 });

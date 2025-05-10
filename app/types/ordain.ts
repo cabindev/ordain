@@ -6,10 +6,16 @@ export type RegionalData = {
   percentage?: number;
 };
 
+export type ProvinceData = {
+  name: string;
+  value: number;
+  percentage?: number;
+};
+
 export type OrdainData = {
   projectName: string;
   projectSubtitle?: string;
-  timestamp?: number;
+  timestamp: number;
   implementationArea?: {
     count: string;
     unit: string;
@@ -18,7 +24,6 @@ export type OrdainData = {
     count: string;
     unit: string;
   };
-  regionalData?: RegionalData[];
   alcoholReduction?: { 
     total: string;
     templeEvents: string; 
@@ -36,16 +41,7 @@ export type OrdainData = {
     count: string; 
     unit: string 
   };
-  summary?: {
-    implementationArea: number;
-    policyExpansionArea: number;
-    modelMonks: number;
-    alcoholReductionTotal: number;
-    totalSavings: number;
-    policy: number;
-  };
-  debug?: {
-    fetchTime?: string;
-    rawDataSample?: any;
-  };
+  regionalData?: RegionalData[];
+  provinceData?: ProvinceData[];
+  debug?: any;
 };

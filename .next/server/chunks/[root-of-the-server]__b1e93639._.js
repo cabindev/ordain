@@ -107,10 +107,10 @@ async function extractSheetData() {
         });
         const spreadsheetId = process.env.GOOGLE_SPREADSHEET_ID;
         console.log('Fetching data from sheet:', spreadsheetId);
-        // ดึงข้อมูลจากชีต API Data
+        // ดึงข้อมูลจากชีต API Data (เพิ่มขอบเขตเพื่อรองรับข้อมูลจังหวัดเพิ่มเติม)
         const response = await sheets.spreadsheets.values.get({
             spreadsheetId,
-            range: 'API Data!A1:C30',
+            range: 'API Data!A1:C150',
             valueRenderOption: 'UNFORMATTED_VALUE',
             dateTimeRenderOption: 'FORMATTED_STRING'
         });
@@ -122,14 +122,39 @@ async function extractSheetData() {
         // แปลงข้อมูลเป็น key-value object
         const dataMap = {};
         const regionalData = [];
+        const provinceData = [];
+        // ตัวแปรสำหรับติดตามส่วนของข้อมูล
         let isRegionSection = false;
+        let isProvinceImpSection = false;
+        let isProvinceModelSection = false;
         // วนลูปผ่านข้อมูลที่ได้รับ
         for (const row of values){
             if (!row[0]) continue; // ข้ามแถวที่ไม่มีข้อมูลในคอลัมน์ A
             const key = String(row[0]).trim();
-            // ตรวจสอบว่ากำลังอยู่ในส่วนของภูมิภาคหรือไม่
+            // ตรวจสอบส่วนของข้อมูล
             if (key === 'region') {
                 isRegionSection = true;
+                isProvinceImpSection = false;
+                isProvinceModelSection = false;
+                console.log('Entering region section');
+                continue;
+            } else if (key === 'province_imp') {
+                isRegionSection = false;
+                isProvinceImpSection = true;
+                isProvinceModelSection = false;
+                console.log('Entering province implementation section');
+                continue;
+            } else if (key === 'province_model') {
+                isRegionSection = false;
+                isProvinceImpSection = false;
+                isProvinceModelSection = true;
+                console.log('Entering province model section');
+                continue;
+            } else if (key === 'end_data' || key.includes('end_') || key === '') {
+                isRegionSection = false;
+                isProvinceImpSection = false;
+                isProvinceModelSection = false;
+                console.log('Exiting data section');
                 continue;
             }
             // ถ้ากำลังอยู่ในส่วนของข้อมูลภูมิภาค
@@ -142,6 +167,24 @@ async function extractSheetData() {
                     value: value,
                     percentage: percentage
                 });
+            } else if (isProvinceImpSection) {
+                // เก็บข้อมูลจังหวัด
+                const value = extractNumber(row[1]);
+                const percentage = row.length > 2 ? extractNumber(row[2]) : 0;
+                provinceData.push({
+                    name: `province_imp:${key}`,
+                    value: value,
+                    percentage: percentage
+                });
+            } else if (isProvinceModelSection) {
+                // เก็บข้อมูลจังหวัด
+                const value = extractNumber(row[1]);
+                const percentage = row.length > 2 ? extractNumber(row[2]) : 0;
+                provinceData.push({
+                    name: `province_model:${key}`,
+                    value: value,
+                    percentage: percentage
+                });
             } else {
                 // เก็บข้อมูลทั่วไป
                 dataMap[key] = row[1];
@@ -149,6 +192,11 @@ async function extractSheetData() {
         }
         console.log('Data mapped:', Object.keys(dataMap).length);
         console.log('Regional data:', regionalData.length);
+        console.log('Province data:', provinceData.length);
+        // แสดงตัวอย่างข้อมูลจังหวัด
+        if (provinceData.length > 0) {
+            console.log('Sample province data:', provinceData.slice(0, 3));
+        }
         // สร้าง OrdainData จาก dataMap
         const data = {
             projectName: String(dataMap['projectName'] || "โครงการบวชสร้างสุข"),
@@ -179,7 +227,14 @@ async function extractSheetData() {
                 count: String(dataMap['policy'] || "0"),
                 unit: "พื้นที่"
             },
-            regionalData: regionalData.length > 0 ? regionalData : undefined
+            regionalData: regionalData.length > 0 ? regionalData : undefined,
+            provinceData: provinceData.length > 0 ? provinceData : undefined,
+            debug: {
+                timestamp: new Date().toISOString(),
+                rowsProcessed: values.length,
+                regionCount: regionalData.length,
+                provinceCount: provinceData.length
+            }
         };
         console.log('Data successfully processed');
         return data;
@@ -215,7 +270,12 @@ async function extractSheetData() {
                 count: "0",
                 unit: "พื้นที่"
             },
-            regionalData: []
+            regionalData: [],
+            provinceData: [],
+            debug: {
+                error: error instanceof Error ? error.message : String(error),
+                timestamp: new Date().toISOString()
+            }
         };
     }
 }
@@ -370,7 +430,8 @@ async function GET(req) {
                     count: "0",
                     unit: "พื้นที่"
                 },
-                regionalData: []
+                regionalData: [],
+                provinceData: []
             },
             source: 'error_fallback',
             error: {

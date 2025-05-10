@@ -50,7 +50,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          {/* Logo - เปลี่ยนเป็นลิงก์ไป sdnthailand.com */}
+          {/* Logo และข้อความ SDN THAILAND */}
           <a href="https://sdnthailand.com" target="_blank" rel="noopener noreferrer" className="flex items-center">
             <Image 
               src="/logosdnthailand.png" 
@@ -59,6 +59,11 @@ export default function Navbar() {
               height={40}
               className="h-10 w-auto"
             />
+            <span className={`ml-2 font-bold text-sm md:text-lg ${
+              scrolled ? 'text-[var(--brown-primary)]' : 'text-white'
+            }`}>
+              SDN THAILAND
+            </span>
           </a>
 
           {/* เมนูบนจอขนาดใหญ่ */}
@@ -72,7 +77,7 @@ export default function Navbar() {
                     ? 'text-[var(--gold-dark)] font-bold'
                     : scrolled 
                       ? 'text-gray-700 hover:text-[var(--gold-primary)]' 
-                      : 'text-white hover:text-[var(--gold-light)]'
+                      : 'text-black hover:text-[var(--gold-light)]'
                 }`}
               >
                 {item.name}

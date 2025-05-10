@@ -1245,7 +1245,7 @@ const StatCard = ({ icon, title, value, unit, description, bgClass, iconClass })
                     children: icon
                 }, void 0, false, {
                     fileName: "[project]/app/components/OrdainStats.tsx",
-                    lineNumber: 81,
+                    lineNumber: 73,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1256,7 +1256,7 @@ const StatCard = ({ icon, title, value, unit, description, bgClass, iconClass })
                             children: title
                         }, void 0, false, {
                             fileName: "[project]/app/components/OrdainStats.tsx",
-                            lineNumber: 85,
+                            lineNumber: 77,
                             columnNumber: 9
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1267,7 +1267,7 @@ const StatCard = ({ icon, title, value, unit, description, bgClass, iconClass })
                                     children: value
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/OrdainStats.tsx",
-                                    lineNumber: 87,
+                                    lineNumber: 79,
                                     columnNumber: 11
                                 }, this),
                                 unit && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1275,13 +1275,13 @@ const StatCard = ({ icon, title, value, unit, description, bgClass, iconClass })
                                     children: unit
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/OrdainStats.tsx",
-                                    lineNumber: 88,
+                                    lineNumber: 80,
                                     columnNumber: 20
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/OrdainStats.tsx",
-                            lineNumber: 86,
+                            lineNumber: 78,
                             columnNumber: 9
                         }, this),
                         description && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1289,70 +1289,27 @@ const StatCard = ({ icon, title, value, unit, description, bgClass, iconClass })
                             children: description
                         }, void 0, false, {
                             fileName: "[project]/app/components/OrdainStats.tsx",
-                            lineNumber: 91,
+                            lineNumber: 83,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/OrdainStats.tsx",
-                    lineNumber: 84,
+                    lineNumber: 76,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/OrdainStats.tsx",
-            lineNumber: 80,
+            lineNumber: 72,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/OrdainStats.tsx",
-        lineNumber: 79,
+        lineNumber: 71,
         columnNumber: 3
     }, this);
-// สร้าง Card สำหรับแสดงข้อมูลผลสำเร็จ
-const SuccessItem = ({ title, value, unit })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-        className: "flex items-start",
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                className: "flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaCheckCircle"], {}, void 0, false, {
-                    fileName: "[project]/app/components/OrdainStats.tsx",
-                    lineNumber: 110,
-                    columnNumber: 7
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/app/components/OrdainStats.tsx",
-                lineNumber: 109,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                className: "ml-3 text-[var(--brown-primary)]",
-                children: [
-                    title,
-                    " ",
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "font-semibold text-[var(--gold-dark)]",
-                        children: value
-                    }, void 0, false, {
-                        fileName: "[project]/app/components/OrdainStats.tsx",
-                        lineNumber: 114,
-                        columnNumber: 7
-                    }, this),
-                    " ",
-                    unit
-                ]
-            }, void 0, true, {
-                fileName: "[project]/app/components/OrdainStats.tsx",
-                lineNumber: 112,
-                columnNumber: 5
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/app/components/OrdainStats.tsx",
-        lineNumber: 108,
-        columnNumber: 3
-    }, this);
-function OrdainStats({ hideTitle = false }) {
+function OrdainStats() {
     const [data, setData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
@@ -1392,7 +1349,7 @@ function OrdainStats({ hideTitle = false }) {
             size: "large"
         }, void 0, false, {
             fileName: "[project]/app/components/OrdainStats.tsx",
-            lineNumber: 164,
+            lineNumber: 132,
             columnNumber: 12
         }, this);
     }
@@ -1404,7 +1361,7 @@ function OrdainStats({ hideTitle = false }) {
             size: "large"
         }, void 0, false, {
             fileName: "[project]/app/components/OrdainStats.tsx",
-            lineNumber: 170,
+            lineNumber: 138,
             columnNumber: 7
         }, this);
     }
@@ -1415,7 +1372,7 @@ function OrdainStats({ hideTitle = false }) {
             message: "ขออภัย ระบบไม่พบข้อมูลโครงการบวชสร้างสุข"
         }, void 0, false, {
             fileName: "[project]/app/components/OrdainStats.tsx",
-            lineNumber: 181,
+            lineNumber: 149,
             columnNumber: 7
         }, this);
     }
@@ -1424,52 +1381,104 @@ function OrdainStats({ hideTitle = false }) {
         if (!num) return "0";
         return new Intl.NumberFormat("th-TH").format(parseInt(num));
     };
-    // คำนวณการประหยัดค่าใช้จ่ายรวม
-    const getTotalSavings = ()=>{
-        if (!data.savings) return "0";
-        return formatNumber((parseInt(data.savings.alcoholSavings || "0") + parseInt(data.savings.expensePerMonk || "0")).toString());
-    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8",
         children: [
-            !hideTitle && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "text-center mb-12",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "text-4xl font-bold mb-4",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "gold-gradient bg-clip-text text-transparent",
-                            children: data.projectName
-                        }, void 0, false, {
-                            fileName: "[project]/app/components/OrdainStats.tsx",
-                            lineNumber: 211,
-                            columnNumber: 13
-                        }, this)
+                        className: "text-4xl font-bold mb-4 gold-gradient",
+                        children: data.projectName
                     }, void 0, false, {
                         fileName: "[project]/app/components/OrdainStats.tsx",
-                        lineNumber: 210,
-                        columnNumber: 11
+                        lineNumber: 166,
+                        columnNumber: 9
                     }, this),
                     data.projectSubtitle && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-xl text-[var(--brown-primary)] max-w-3xl mx-auto",
                         children: data.projectSubtitle
                     }, void 0, false, {
                         fileName: "[project]/app/components/OrdainStats.tsx",
-                        lineNumber: 214,
-                        columnNumber: 13
+                        lineNumber: 170,
+                        columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mt-4 w-24 h-1 bg-gradient-to-r from-[var(--gold-light)] to-[var(--gold-primary)] mx-auto rounded-full"
                     }, void 0, false, {
                         fileName: "[project]/app/components/OrdainStats.tsx",
-                        lineNumber: 218,
+                        lineNumber: 174,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/components/OrdainStats.tsx",
+                lineNumber: 165,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12",
+                children: [
+                    data.implementationArea && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(StatCard, {
+                        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaMapMarkerAlt"], {
+                            size: 24
+                        }, void 0, false, {
+                            fileName: "[project]/app/components/OrdainStats.tsx",
+                            lineNumber: 181,
+                            columnNumber: 19
+                        }, void 0),
+                        title: "พื้นที่ดำเนินการโครงการ",
+                        value: formatNumber(data.implementationArea.count),
+                        unit: data.implementationArea.unit,
+                        bgClass: "bg-gradient-to-br from-white to-[var(--gold-light)] bg-opacity-10",
+                        iconClass: "bg-[var(--gold-primary)]"
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/OrdainStats.tsx",
+                        lineNumber: 180,
+                        columnNumber: 11
+                    }, this),
+                    data.modelMonks && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(StatCard, {
+                        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaPrayingHands"], {
+                            size: 24
+                        }, void 0, false, {
+                            fileName: "[project]/app/components/OrdainStats.tsx",
+                            lineNumber: 192,
+                            columnNumber: 19
+                        }, void 0),
+                        title: "พระต้นแบบ",
+                        value: formatNumber(data.modelMonks.count),
+                        unit: data.modelMonks.unit,
+                        description: "พระต้นแบบที่ผ่านกระบวนการบวชสร้างสุข",
+                        bgClass: "bg-gradient-to-br from-white to-[var(--orange-light)] bg-opacity-10",
+                        iconClass: "bg-[var(--orange-primary)]"
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/OrdainStats.tsx",
+                        lineNumber: 191,
+                        columnNumber: 11
+                    }, this),
+                    data.alcoholReduction && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(StatCard, {
+                        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaWineBottle"], {
+                            size: 24
+                        }, void 0, false, {
+                            fileName: "[project]/app/components/OrdainStats.tsx",
+                            lineNumber: 204,
+                            columnNumber: 19
+                        }, void 0),
+                        title: "งานบวชที่ลดแอลกอฮอล์",
+                        value: formatNumber(data.alcoholReduction.total),
+                        unit: "งาน",
+                        bgClass: "bg-gradient-to-br from-white to-[var(--gold-primary)] bg-opacity-10",
+                        iconClass: "bg-[var(--brown-primary)]"
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/OrdainStats.tsx",
+                        lineNumber: 203,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/OrdainStats.tsx",
-                lineNumber: 209,
-                columnNumber: 9
+                lineNumber: 178,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12",
@@ -1478,20 +1487,20 @@ function OrdainStats({ hideTitle = false }) {
                         data: data.alcoholReduction
                     }, void 0, false, {
                         fileName: "[project]/app/components/OrdainStats.tsx",
-                        lineNumber: 226,
+                        lineNumber: 218,
                         columnNumber: 11
                     }, this),
                     data.regionalData && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$ordain$2f$components$2f$ordainChart$2f$RegionalPieChart$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__RegionalPieChart$3e$__["RegionalPieChart"], {
                         data: data.regionalData
                     }, void 0, false, {
                         fileName: "[project]/app/components/OrdainStats.tsx",
-                        lineNumber: 231,
+                        lineNumber: 223,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/OrdainStats.tsx",
-                lineNumber: 223,
+                lineNumber: 215,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1501,20 +1510,20 @@ function OrdainStats({ hideTitle = false }) {
                         data: data
                     }, void 0, false, {
                         fileName: "[project]/app/components/OrdainStats.tsx",
-                        lineNumber: 239,
+                        lineNumber: 231,
                         columnNumber: 11
                     }, this),
                     data.savings && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$ordain$2f$components$2f$ordainChart$2f$SavingsBarChart$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__SavingsBarChart$3e$__["SavingsBarChart"], {
                         data: data.savings
                     }, void 0, false, {
                         fileName: "[project]/app/components/OrdainStats.tsx",
-                        lineNumber: 244,
+                        lineNumber: 236,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/OrdainStats.tsx",
-                lineNumber: 236,
+                lineNumber: 228,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1532,19 +1541,19 @@ function OrdainStats({ hideTitle = false }) {
                                             className: "mr-2 text-[var(--orange-primary)]"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/OrdainStats.tsx",
-                                            lineNumber: 254,
+                                            lineNumber: 246,
                                             columnNumber: 15
                                         }, this),
                                         " พระต้นแบบและนโยบาย"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/OrdainStats.tsx",
-                                    lineNumber: 253,
+                                    lineNumber: 245,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/components/OrdainStats.tsx",
-                                lineNumber: 252,
+                                lineNumber: 244,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1561,12 +1570,12 @@ function OrdainStats({ hideTitle = false }) {
                                                         size: 20
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/OrdainStats.tsx",
-                                                        lineNumber: 262,
+                                                        lineNumber: 254,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/OrdainStats.tsx",
-                                                    lineNumber: 261,
+                                                    lineNumber: 253,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1577,7 +1586,7 @@ function OrdainStats({ hideTitle = false }) {
                                                             children: "จำนวนพระต้นแบบที่ผ่านกระบวนการบวชสร้างสุข"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/OrdainStats.tsx",
-                                                            lineNumber: 265,
+                                                            lineNumber: 257,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1588,7 +1597,7 @@ function OrdainStats({ hideTitle = false }) {
                                                                     children: formatNumber(data.modelMonks.count)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/OrdainStats.tsx",
-                                                                    lineNumber: 269,
+                                                                    lineNumber: 261,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1596,13 +1605,13 @@ function OrdainStats({ hideTitle = false }) {
                                                                     children: data.modelMonks.unit || "รูป"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/OrdainStats.tsx",
-                                                                    lineNumber: 272,
+                                                                    lineNumber: 264,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/OrdainStats.tsx",
-                                                            lineNumber: 268,
+                                                            lineNumber: 260,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1610,31 +1619,31 @@ function OrdainStats({ hideTitle = false }) {
                                                             children: "พระต้นแบบที่ยึดพระธรรมวินัย ประหยัด เรียบง่าย"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/OrdainStats.tsx",
-                                                            lineNumber: 276,
+                                                            lineNumber: 268,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/OrdainStats.tsx",
-                                                    lineNumber: 264,
+                                                    lineNumber: 256,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/components/OrdainStats.tsx",
-                                            lineNumber: 260,
+                                            lineNumber: 252,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/OrdainStats.tsx",
-                                        lineNumber: 259,
+                                        lineNumber: 251,
                                         columnNumber: 15
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$ui$2f$loading$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["EmptyData"], {
                                         title: "ไม่พบข้อมูลพระต้นแบบ",
                                         size: "small"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/OrdainStats.tsx",
-                                        lineNumber: 283,
+                                        lineNumber: 275,
                                         columnNumber: 15
                                     }, this),
                                     data.policy ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1648,12 +1657,12 @@ function OrdainStats({ hideTitle = false }) {
                                                         size: 20
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/OrdainStats.tsx",
-                                                        lineNumber: 290,
+                                                        lineNumber: 282,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/OrdainStats.tsx",
-                                                    lineNumber: 289,
+                                                    lineNumber: 281,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1664,7 +1673,7 @@ function OrdainStats({ hideTitle = false }) {
                                                             children: "นโยบาย/กติกา/สภาพแวดล้อม"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/OrdainStats.tsx",
-                                                            lineNumber: 293,
+                                                            lineNumber: 285,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1675,7 +1684,7 @@ function OrdainStats({ hideTitle = false }) {
                                                                     children: formatNumber(data.policy.count)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/OrdainStats.tsx",
-                                                                    lineNumber: 297,
+                                                                    lineNumber: 289,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1683,13 +1692,13 @@ function OrdainStats({ hideTitle = false }) {
                                                                     children: data.policy.unit || "พื้นที่"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/OrdainStats.tsx",
-                                                                    lineNumber: 300,
+                                                                    lineNumber: 292,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/OrdainStats.tsx",
-                                                            lineNumber: 296,
+                                                            lineNumber: 288,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1697,37 +1706,37 @@ function OrdainStats({ hideTitle = false }) {
                                                             children: "ที่เอื้อต่อการปรับเปลี่ยนค่านิยมการจัดงานบวช"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/OrdainStats.tsx",
-                                                            lineNumber: 304,
+                                                            lineNumber: 296,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/OrdainStats.tsx",
-                                                    lineNumber: 292,
+                                                    lineNumber: 284,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/components/OrdainStats.tsx",
-                                            lineNumber: 288,
+                                            lineNumber: 280,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/OrdainStats.tsx",
-                                        lineNumber: 287,
+                                        lineNumber: 279,
                                         columnNumber: 15
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$ui$2f$loading$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["EmptyData"], {
                                         title: "ไม่พบข้อมูลนโยบาย",
                                         size: "small"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/OrdainStats.tsx",
-                                        lineNumber: 311,
+                                        lineNumber: 303,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/OrdainStats.tsx",
-                                lineNumber: 257,
+                                lineNumber: 249,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1735,13 +1744,13 @@ function OrdainStats({ hideTitle = false }) {
                                 children: "นโยบายและสภาพแวดล้อมที่เอื้อต่อการปรับเปลี่ยนค่านิยมการจัดงานบวช"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/OrdainStats.tsx",
-                                lineNumber: 314,
+                                lineNumber: 306,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/OrdainStats.tsx",
-                        lineNumber: 251,
+                        lineNumber: 243,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1756,19 +1765,19 @@ function OrdainStats({ hideTitle = false }) {
                                             className: "mr-2 text-[var(--gold-primary)]"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/OrdainStats.tsx",
-                                            lineNumber: 323,
+                                            lineNumber: 315,
                                             columnNumber: 15
                                         }, this),
                                         " สรุปผลสำเร็จของโครงการ"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/OrdainStats.tsx",
-                                    lineNumber: 322,
+                                    lineNumber: 314,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/components/OrdainStats.tsx",
-                                lineNumber: 321,
+                                lineNumber: 313,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1781,90 +1790,293 @@ function OrdainStats({ hideTitle = false }) {
                                             children: "รูปธรรมความสำเร็จ"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/OrdainStats.tsx",
-                                            lineNumber: 328,
+                                            lineNumber: 320,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                             className: "space-y-4",
                                             children: [
-                                                data.implementationArea && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SuccessItem, {
-                                                    title: "พื้นที่ดำเนินการโครงการบวชสร้างสุข",
-                                                    value: formatNumber(data.implementationArea.count),
-                                                    unit: "พื้นที่"
-                                                }, void 0, false, {
+                                                data.implementationArea && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    className: "flex items-start",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5",
+                                                            children: "✓"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/components/OrdainStats.tsx",
+                                                            lineNumber: 326,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "ml-3 text-[var(--brown-primary)]",
+                                                            children: [
+                                                                "พื้นที่ดำเนินการโครงการบวชสร้างสุข",
+                                                                " ",
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "font-semibold text-[var(--gold-dark)]",
+                                                                    children: formatNumber(data.implementationArea.count)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/components/OrdainStats.tsx",
+                                                                    lineNumber: 329,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                " ",
+                                                                "พื้นที่"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/components/OrdainStats.tsx",
+                                                            lineNumber: 327,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
                                                     fileName: "[project]/app/components/OrdainStats.tsx",
-                                                    lineNumber: 333,
+                                                    lineNumber: 325,
                                                     columnNumber: 19
                                                 }, this),
-                                                data.policyExpansionArea && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SuccessItem, {
-                                                    title: "พื้นที่ขยายผลระดับนโยบาย",
-                                                    value: formatNumber(data.policyExpansionArea.count),
-                                                    unit: "พื้นที่"
-                                                }, void 0, false, {
+                                                data.policyExpansionArea && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    className: "flex items-start",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5",
+                                                            children: "✓"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/components/OrdainStats.tsx",
+                                                            lineNumber: 338,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "ml-3 text-[var(--brown-primary)]",
+                                                            children: [
+                                                                "พื้นที่ขยายผลระดับนโยบาย",
+                                                                " ",
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "font-semibold text-[var(--gold-dark)]",
+                                                                    children: formatNumber(data.policyExpansionArea.count)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/components/OrdainStats.tsx",
+                                                                    lineNumber: 341,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                " ",
+                                                                "พื้นที่"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/components/OrdainStats.tsx",
+                                                            lineNumber: 339,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
                                                     fileName: "[project]/app/components/OrdainStats.tsx",
-                                                    lineNumber: 340,
+                                                    lineNumber: 337,
                                                     columnNumber: 19
                                                 }, this),
-                                                data.modelMonks && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SuccessItem, {
-                                                    title: "พระต้นแบบที่ผ่านกระบวนการบวชสร้างสุข",
-                                                    value: formatNumber(data.modelMonks.count),
-                                                    unit: "รูป"
-                                                }, void 0, false, {
+                                                data.modelMonks && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    className: "flex items-start",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5",
+                                                            children: "✓"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/components/OrdainStats.tsx",
+                                                            lineNumber: 350,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "ml-3 text-[var(--brown-primary)]",
+                                                            children: [
+                                                                "พระต้นแบบที่ผ่านกระบวนการบวชสร้างสุข",
+                                                                " ",
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "font-semibold text-[var(--gold-dark)]",
+                                                                    children: formatNumber(data.modelMonks.count)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/components/OrdainStats.tsx",
+                                                                    lineNumber: 353,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                " ",
+                                                                "รูป"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/components/OrdainStats.tsx",
+                                                            lineNumber: 351,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
                                                     fileName: "[project]/app/components/OrdainStats.tsx",
-                                                    lineNumber: 347,
+                                                    lineNumber: 349,
                                                     columnNumber: 19
                                                 }, this),
-                                                data.alcoholReduction && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SuccessItem, {
-                                                    title: "ลดการบริโภคเครื่องดื่มแอลกอฮอล์ในงานบวช",
-                                                    value: formatNumber(data.alcoholReduction.total),
-                                                    unit: "งาน"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/components/OrdainStats.tsx",
-                                                    lineNumber: 354,
-                                                    columnNumber: 19
-                                                }, this),
-                                                data.savings && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SuccessItem, {
-                                                    title: "ประหยัดค่าใช้จ่ายรวม",
-                                                    value: getTotalSavings(),
-                                                    unit: "บาท"
-                                                }, void 0, false, {
+                                                data.alcoholReduction && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    className: "flex items-start",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5",
+                                                            children: "✓"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/components/OrdainStats.tsx",
+                                                            lineNumber: 362,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "ml-3 text-[var(--brown-primary)]",
+                                                            children: [
+                                                                "ลดการบริโภคเครื่องดื่มแอลกอฮอล์ในงานบวช",
+                                                                " ",
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "font-semibold text-[var(--gold-dark)]",
+                                                                    children: formatNumber(data.alcoholReduction.total)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/components/OrdainStats.tsx",
+                                                                    lineNumber: 365,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                " ",
+                                                                "งาน"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/components/OrdainStats.tsx",
+                                                            lineNumber: 363,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
                                                     fileName: "[project]/app/components/OrdainStats.tsx",
                                                     lineNumber: 361,
                                                     columnNumber: 19
                                                 }, this),
-                                                data.policy && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SuccessItem, {
-                                                    title: "นโยบาย/กติกา/สภาพแวดล้อมที่เอื้อต่อการปรับเปลี่ยนค่านิยม",
-                                                    value: formatNumber(data.policy.count),
-                                                    unit: "พื้นที่"
-                                                }, void 0, false, {
+                                                data.savings && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    className: "flex items-start",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5",
+                                                            children: "✓"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/components/OrdainStats.tsx",
+                                                            lineNumber: 374,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "ml-3 text-[var(--brown-primary)]",
+                                                            children: [
+                                                                "ประหยัดค่าใช้จ่ายรวม",
+                                                                " ",
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "font-semibold text-[var(--gold-dark)]",
+                                                                    children: formatNumber((parseInt(data.savings.alcoholSavings || "0") + parseInt(data.savings.expensePerMonk || "0")).toString())
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/components/OrdainStats.tsx",
+                                                                    lineNumber: 377,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                " ",
+                                                                "บาท"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/components/OrdainStats.tsx",
+                                                            lineNumber: 375,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
                                                     fileName: "[project]/app/components/OrdainStats.tsx",
-                                                    lineNumber: 368,
+                                                    lineNumber: 373,
                                                     columnNumber: 19
                                                 }, this),
-                                                data.regionalData && data.regionalData.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SuccessItem, {
-                                                    title: "พื้นที่ดำเนินการใน",
-                                                    value: data.regionalData.length.toString(),
-                                                    unit: "ภูมิภาคทั่วประเทศ"
-                                                }, void 0, false, {
+                                                data.policy && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    className: "flex items-start",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5",
+                                                            children: "✓"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/components/OrdainStats.tsx",
+                                                            lineNumber: 391,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "ml-3 text-[var(--brown-primary)]",
+                                                            children: [
+                                                                "นโยบาย/กติกา/สภาพแวดล้อมที่เอื้อต่อการปรับเปลี่ยนค่านิยม",
+                                                                " ",
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "font-semibold text-[var(--gold-dark)]",
+                                                                    children: formatNumber(data.policy.count)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/components/OrdainStats.tsx",
+                                                                    lineNumber: 394,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                " ",
+                                                                "พื้นที่"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/components/OrdainStats.tsx",
+                                                            lineNumber: 392,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
                                                     fileName: "[project]/app/components/OrdainStats.tsx",
-                                                    lineNumber: 375,
+                                                    lineNumber: 390,
+                                                    columnNumber: 19
+                                                }, this),
+                                                data.regionalData && data.regionalData.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    className: "flex items-start",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5",
+                                                            children: "✓"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/components/OrdainStats.tsx",
+                                                            lineNumber: 403,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "ml-3 text-[var(--brown-primary)]",
+                                                            children: [
+                                                                "พื้นที่ดำเนินการใน",
+                                                                " ",
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "font-semibold text-[var(--gold-dark)]",
+                                                                    children: data.regionalData.length
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/components/OrdainStats.tsx",
+                                                                    lineNumber: 406,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                " ",
+                                                                "ภูมิภาคทั่วประเทศ"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/components/OrdainStats.tsx",
+                                                            lineNumber: 404,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/components/OrdainStats.tsx",
+                                                    lineNumber: 402,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/components/OrdainStats.tsx",
-                                            lineNumber: 331,
+                                            lineNumber: 323,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/OrdainStats.tsx",
-                                    lineNumber: 327,
+                                    lineNumber: 319,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/components/OrdainStats.tsx",
-                                lineNumber: 326,
+                                lineNumber: 318,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1875,7 +2087,7 @@ function OrdainStats({ hideTitle = false }) {
                                         children: "งานบวชสร้างสุขต้นแบบ"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/OrdainStats.tsx",
-                                        lineNumber: 385,
+                                        lineNumber: 417,
                                         columnNumber: 13
                                     }, this),
                                     ' "ยึดพระธรรมวินัย ประหยัด เรียบง่าย" ',
@@ -1883,7 +2095,7 @@ function OrdainStats({ hideTitle = false }) {
                                         className: "sm:hidden"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/OrdainStats.tsx",
-                                        lineNumber: 385,
+                                        lineNumber: 417,
                                         columnNumber: 136
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1891,38 +2103,31 @@ function OrdainStats({ hideTitle = false }) {
                                         children: "(ปลอดเหล้า ปลอดปัจจัยเสี่ยง ลดผลกระทบความรุนแรง)"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/OrdainStats.tsx",
-                                        lineNumber: 386,
+                                        lineNumber: 418,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/OrdainStats.tsx",
-                                lineNumber: 384,
+                                lineNumber: 416,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/OrdainStats.tsx",
-                        lineNumber: 320,
+                        lineNumber: 312,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/OrdainStats.tsx",
-                lineNumber: 249,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full h-1 bg-gradient-to-r from-[var(--gold-light)] to-[var(--gold-primary)] rounded-full mt-8 mb-2 opacity-50"
-            }, void 0, false, {
-                fileName: "[project]/app/components/OrdainStats.tsx",
-                lineNumber: 392,
+                lineNumber: 241,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/OrdainStats.tsx",
-        lineNumber: 206,
+        lineNumber: 163,
         columnNumber: 5
     }, this);
 }
