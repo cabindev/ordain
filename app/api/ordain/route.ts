@@ -26,7 +26,7 @@ export async function GET(req: Request) {
         } 
       }
     );
-  } catch (error) {
+  } catch (error: any) { // กำหนด type เป็น any เพื่อให้เข้าถึง properties ได้
     console.error('Error in API route:', error);
     
     // ส่งข้อมูลว่างเปล่าเมื่อเกิดข้อผิดพลาด
@@ -71,6 +71,7 @@ export async function GET(req: Request) {
         }
       },
       { 
+        status: 500, // เพิ่ม status code
         headers: {
           'Cache-Control': 'no-store, max-age=0, must-revalidate',
           'Expires': '0',

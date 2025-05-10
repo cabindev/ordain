@@ -12,6 +12,7 @@ import {
 } from 'echarts/components';
 import { PieChart } from 'echarts/charts';
 import { CanvasRenderer } from 'echarts/renderers';
+import type { EChartsOption } from 'echarts'; // เพิ่มการนำเข้า EChartsOption type
 
 // Register necessary components
 echarts.use([
@@ -48,7 +49,7 @@ export function RegionalPieChart({ data }: ChartProps) {
     const chart = echarts.init(chartRef.current);
     
     // กำหนดตัวเลือกการแสดงผลใหม่ให้สดใสขึ้น
-    const option = {
+    const option: EChartsOption = {
       title: {
         text: 'สัดส่วนรายภูมิภาค',
         textStyle: {
@@ -63,13 +64,11 @@ export function RegionalPieChart({ data }: ChartProps) {
       tooltip: {
         trigger: 'item',
         formatter: '{a} <br/>{b}: {c} ({d}%)',
-        textStyle: {
-          fontFamily: 'Kanit, sans-serif'
-        },
         backgroundColor: 'rgba(255, 255, 255, 0.9)',
         borderColor: '#D4AF37',
         borderWidth: 1,
         textStyle: {
+          fontFamily: 'Kanit, sans-serif',
           color: '#6B4C15'
         },
         extraCssText: 'box-shadow: 0 4px 8px rgba(212, 175, 55, 0.2);'

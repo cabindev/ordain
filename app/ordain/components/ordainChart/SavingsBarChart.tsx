@@ -13,6 +13,7 @@ import {
 } from 'echarts/components';
 import { BarChart } from 'echarts/charts';
 import { CanvasRenderer } from 'echarts/renderers';
+import type { EChartsOption } from 'echarts'; // เพิ่มการนำเข้า EChartsOption type
 
 // Register necessary components
 echarts.use([
@@ -27,6 +28,14 @@ echarts.use([
 type SavingsData = {
   alcoholSavings: string;
   expensePerMonk: string;
+};
+
+// type สำหรับ params ใน formatter
+type ChartFormatterParams = {
+  name: string;
+  value: number;
+  dataIndex: number;
+  data: any;
 };
 
 export function SavingsBarChart({ data }: { data?: SavingsData }) {
@@ -46,7 +55,7 @@ export function SavingsBarChart({ data }: { data?: SavingsData }) {
     const chart = echarts.init(chartRef.current);
     
     // กำหนดตัวเลือกการแสดงผล
-    const option = {
+    const option: EChartsOption = {
       title: {
         text: 'การประหยัดค่าใช้จ่าย (บาท)',
         textStyle: {

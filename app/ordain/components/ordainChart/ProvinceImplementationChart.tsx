@@ -13,6 +13,7 @@ import {
 } from 'echarts/components';
 import { BarChart } from 'echarts/charts';
 import { CanvasRenderer } from 'echarts/renderers';
+import type { EChartsOption } from 'echarts'; // เพิ่มการนำเข้า type EChartsOption
 
 // Register necessary components
 echarts.use([
@@ -34,11 +35,16 @@ type ChartProps = {
   data: ProvinceData[];
 };
 
+// กำหนด interface สำหรับ Region Colors
+interface RegionColorMap {
+  [key: string]: string;
+}
+
 export function ProvinceImplementationChart({ data }: ChartProps) {
   const chartRef = useRef<HTMLDivElement>(null);
   
   // กำหนดสีตามภูมิภาค
-  const REGION_COLORS = {
+  const REGION_COLORS: RegionColorMap = {
     'เหนือ': '#D4AF37',       // Northern - Gold
     'อีสาน': '#FF7E33',       // Northeastern - Orange
     'กลาง': '#6B4C15',        // Central - Brown
@@ -61,7 +67,7 @@ export function ProvinceImplementationChart({ data }: ChartProps) {
     const chart = echarts.init(chartRef.current);
     
     // กำหนดตัวเลือกการแสดงผล
-    const option = {
+    const option: EChartsOption = {
       title: {
         text: 'สัดส่วนรายจังหวัด',
         textStyle: {
@@ -80,15 +86,15 @@ export function ProvinceImplementationChart({ data }: ChartProps) {
         },
         formatter: function(params: any) {
           const data = params[0];
-          return `${data.name}: ${data.value} พื้นที่ (${(data.value / sortedData.reduce((sum, item) => sum + item.value, 0) * 100).toFixed(1)}%)`;
-        },
-        textStyle: {
-          fontFamily: 'Kanit, sans-serif'
+          const total = sortedData.reduce((sum, item) => sum + item.value, 0);
+          const percentage = (data.value / total * 100).toFixed(1);
+          return `${data.name}: ${data.value} พื้นที่ (${percentage}%)`;
         },
         backgroundColor: 'rgba(255, 255, 255, 0.9)',
         borderColor: '#D4AF37',
         borderWidth: 1,
         textStyle: {
+          fontFamily: 'Kanit, sans-serif',
           color: '#6B4C15'
         },
         extraCssText: 'box-shadow: 0 4px 8px rgba(212, 175, 55, 0.2);'

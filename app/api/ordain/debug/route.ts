@@ -1,3 +1,5 @@
+
+
 import { google } from 'googleapis';
 import { NextResponse } from 'next/server';
 
@@ -35,11 +37,15 @@ export async function GET() {
       rowCount: response.data.values?.length || 0,
       sampleData: response.data.values?.slice(0, 3) || [] // แสดง 3 แถวแรก
     });
-  } catch (error) {
+  } catch (error: any) { // กำหนดเป็น any เพื่อให้เข้าถึง properties ได้
+    // จัดการกับ error อย่างปลอดภัยโดยตรวจสอบคุณสมบัติก่อนใช้งาน
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    const errorDetails = error.errors ? error.errors : [];
+
     return NextResponse.json({
       success: false,
-      error: error.message,
-      errorDetails: error.errors || [],
+      error: errorMessage,
+      errorDetails: errorDetails,
       envInfo: {
         clientEmail: process.env.GOOGLE_CLIENT_EMAIL,
         privateKeyExists: !!process.env.GOOGLE_PRIVATE_KEY,

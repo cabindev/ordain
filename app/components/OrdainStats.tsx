@@ -126,39 +126,45 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
         // เพิ่ม timestamp เพื่อป้องกันการแคชข้อมูล
         const timestamp = new Date().getTime();
         const response = await fetch(`/api/ordain?t=${timestamp}`, {
-          cache: 'no-store',
+          cache: "no-store",
           headers: {
-            'Pragma': 'no-cache',
-            'Cache-Control': 'no-cache'
-          }
+            Pragma: "no-cache",
+            "Cache-Control": "no-cache",
+          },
         });
-        
+
         const result = await response.json();
-        
+
         console.log(`Data fetched at ${new Date().toISOString()}:`, result);
-        
+
         if (response.ok && result.data) {
           // ตรวจสอบและเตรียมข้อมูล provinceData
-          if (!result.data.provinceData || !Array.isArray(result.data.provinceData) || result.data.provinceData.length === 0) {
+          if (
+            !result.data.provinceData ||
+            !Array.isArray(result.data.provinceData) ||
+            result.data.provinceData.length === 0
+          ) {
             console.warn("Missing or empty provinceData, using dummy data");
             // result.data.provinceData = createDummyProvinceData();
           } else {
-            console.log(`Received provinceData with ${result.data.provinceData.length} provinces`);
+            console.log(
+              `Received provinceData with ${result.data.provinceData.length} provinces`
+            );
           }
-          
+
           setData(result.data);
         } else {
-          console.error('API Error:', result);
-          setError(result.error?.message || 'เกิดข้อผิดพลาดในการดึงข้อมูล');
+          console.error("API Error:", result);
+          setError(result.error?.message || "เกิดข้อผิดพลาดในการดึงข้อมูล");
         }
       } catch (err) {
-        console.error('Fetch Error:', err);
-        setError('เกิดข้อผิดพลาดในการเชื่อมต่อกับเซิร์ฟเวอร์');
+        console.error("Fetch Error:", err);
+        setError("เกิดข้อผิดพลาดในการเชื่อมต่อกับเซิร์ฟเวอร์");
       } finally {
         setLoading(false);
       }
     }
-    
+
     fetchData();
   }, []);
 
@@ -195,10 +201,14 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
   };
 
   // เช็คข้อมูลจังหวัดก่อนแสดงกราฟ
-  const hasValidProvinceData = data.provinceData && Array.isArray(data.provinceData) && data.provinceData.length > 0;
+  const hasValidProvinceData =
+    data.provinceData &&
+    Array.isArray(data.provinceData) &&
+    data.provinceData.length > 0;
   console.log("Has valid province data:", hasValidProvinceData);
   if (hasValidProvinceData) {
-    console.log("Sample province data:", data.provinceData.slice(0, 3));
+    // ใช้ Optional chaining (?.) และ Nullish coalescing operator (??) เพื่อความปลอดภัยยิ่งขึ้น
+    console.log("Sample province data:", data.provinceData?.slice(0, 3) ?? []);
   }
 
   return (
@@ -221,7 +231,7 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
       {/* การ์ดข้อมูลหลัก */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
         {data.implementationArea && (
-          <StatCard 
+          <StatCard
             icon={<FaMapMarkerAlt size={24} />}
             title="พื้นที่ดำเนินการโครงการ"
             value={formatNumber(data.implementationArea.count)}
@@ -230,9 +240,9 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
             iconClass="bg-[var(--gold-primary)]"
           />
         )}
-        
+
         {data.modelMonks && (
-          <StatCard 
+          <StatCard
             icon={<FaPrayingHands size={24} />}
             title="พระต้นแบบ"
             value={formatNumber(data.modelMonks.count)}
@@ -242,9 +252,9 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
             iconClass="bg-[var(--orange-primary)]"
           />
         )}
-        
+
         {data.alcoholReduction && (
-          <StatCard 
+          <StatCard
             icon={<FaWineBottle size={24} />}
             title="งานบวชที่ลดแอลกอฮอล์"
             value={formatNumber(data.alcoholReduction.total)}
@@ -261,11 +271,9 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
         {data.alcoholReduction && (
           <AlcoholReductionBarChart data={data.alcoholReduction} />
         )}
-        
+
         {/* ข้อมูลสัดส่วนรายภูมิภาค */}
-        {data.regionalData && (
-          <RegionalPieChart data={data.regionalData} />
-        )}
+        {data.regionalData && <RegionalPieChart data={data.regionalData} />}
       </div>
 
       {/* พื้นที่ดำเนินการและนโยบาย */}
@@ -276,9 +284,7 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
         )}
 
         {/* กราฟการประหยัด */}
-        {data.savings && (
-          <SavingsBarChart data={data.savings} />
-        )}
+        {data.savings && <SavingsBarChart data={data.savings} />}
       </div>
 
       {/* ข้อมูลรายจังหวัด */}
@@ -305,7 +311,8 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
         <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-[var(--orange-light)] border-opacity-30">
           <div className="px-6 py-4 border-b border-[var(--orange-light)] bg-gradient-to-r from-[var(--orange-light)] to-white bg-opacity-50">
             <h3 className="text-xl font-semibold text-[var(--brown-primary)] flex items-center">
-              <FaPrayingHands className="mr-2 text-[var(--orange-primary)]" /> พระต้นแบบและนโยบาย
+              <FaPrayingHands className="mr-2 text-[var(--orange-primary)]" />{" "}
+              พระต้นแบบและนโยบาย
             </h3>
           </div>
           <div className="px-6 py-6">
@@ -374,7 +381,8 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
         <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-[var(--gold-primary)] diagonal-pattern">
           <div className="px-6 py-4 border-b border-[var(--gold-primary)] bg-[var(--gold-primary)] bg-opacity-20">
             <h3 className="text-xl font-semibold text-[var(--brown-dark)] flex items-center">
-              <FaTrophy className="mr-2 text-[var(--gold-primary)]" /> สรุปผลสำเร็จของโครงการ
+              <FaTrophy className="mr-2 text-[var(--gold-primary)]" />{" "}
+              สรุปผลสำเร็จของโครงการ
             </h3>
           </div>
           <div className="px-6 py-6 bg-white">
@@ -385,7 +393,9 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
               <ul className="space-y-4">
                 {data.implementationArea && (
                   <li className="flex items-start">
-                    <span className="flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5">✓</span>
+                    <span className="flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5">
+                      ✓
+                    </span>
                     <span className="ml-3 text-[var(--brown-primary)]">
                       พื้นที่ดำเนินการโครงการบวชสร้างสุข{" "}
                       <span className="font-semibold text-[var(--gold-dark)]">
@@ -397,7 +407,9 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
                 )}
                 {data.policyExpansionArea && (
                   <li className="flex items-start">
-                    <span className="flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5">✓</span>
+                    <span className="flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5">
+                      ✓
+                    </span>
                     <span className="ml-3 text-[var(--brown-primary)]">
                       พื้นที่ขยายผลระดับนโยบาย{" "}
                       <span className="font-semibold text-[var(--gold-dark)]">
@@ -409,7 +421,9 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
                 )}
                 {data.modelMonks && (
                   <li className="flex items-start">
-                    <span className="flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5">✓</span>
+                    <span className="flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5">
+                      ✓
+                    </span>
                     <span className="ml-3 text-[var(--brown-primary)]">
                       พระต้นแบบที่ผ่านกระบวนการบวชสร้างสุข{" "}
                       <span className="font-semibold text-[var(--gold-dark)]">
@@ -421,7 +435,9 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
                 )}
                 {data.alcoholReduction && (
                   <li className="flex items-start">
-                    <span className="flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5">✓</span>
+                    <span className="flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5">
+                      ✓
+                    </span>
                     <span className="ml-3 text-[var(--brown-primary)]">
                       ลดการบริโภคเครื่องดื่มแอลกอฮอล์ในงานบวช{" "}
                       <span className="font-semibold text-[var(--gold-dark)]">
@@ -433,7 +449,9 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
                 )}
                 {data.savings && (
                   <li className="flex items-start">
-                    <span className="flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5">✓</span>
+                    <span className="flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5">
+                      ✓
+                    </span>
                     <span className="ml-3 text-[var(--brown-primary)]">
                       ประหยัดค่าใช้จ่ายรวม{" "}
                       <span className="font-semibold text-[var(--gold-dark)]">
@@ -450,7 +468,9 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
                 )}
                 {data.policy && (
                   <li className="flex items-start">
-                    <span className="flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5">✓</span>
+                    <span className="flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5">
+                      ✓
+                    </span>
                     <span className="ml-3 text-[var(--brown-primary)]">
                       นโยบาย/กติกา/สภาพแวดล้อมที่เอื้อต่อการปรับเปลี่ยนค่านิยม{" "}
                       <span className="font-semibold text-[var(--gold-dark)]">
@@ -462,7 +482,9 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
                 )}
                 {data.regionalData && data.regionalData.length > 0 && (
                   <li className="flex items-start">
-                    <span className="flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5">✓</span>
+                    <span className="flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5">
+                      ✓
+                    </span>
                     <span className="ml-3 text-[var(--brown-primary)]">
                       พื้นที่ดำเนินการใน{" "}
                       <span className="font-semibold text-[var(--gold-dark)]">
@@ -474,7 +496,9 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
                 )}
                 {hasValidProvinceData && (
                   <li className="flex items-start">
-                    <span className="flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5">✓</span>
+                    <span className="flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5">
+                      ✓
+                    </span>
                     <span className="ml-3 text-[var(--brown-primary)]">
                       พื้นที่ดำเนินการใน{" "}
                       <span className="font-semibold text-[var(--gold-dark)]">
@@ -488,8 +512,13 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
             </div>
           </div>
           <div className="px-6 py-4 bg-[var(--gold-primary)] bg-opacity-10 text-center font-medium text-[var(--brown-primary)] border-t border-[var(--gold-primary)]">
-            <span className="font-semibold gold-gradient inline-block">งานบวชสร้างสุขต้นแบบ</span> "ยึดพระธรรมวินัย ประหยัด เรียบง่าย" <br className="sm:hidden" />
-            <span className="text-sm">(ปลอดเหล้า ปลอดปัจจัยเสี่ยง ลดผลกระทบความรุนแรง)</span>
+            <span className="font-semibold gold-gradient inline-block">
+              งานบวชสร้างสุขต้นแบบ
+            </span>{" "}
+            "ยึดพระธรรมวินัย ประหยัด เรียบง่าย" <br className="sm:hidden" />
+            <span className="text-sm">
+              (ปลอดเหล้า ปลอดปัจจัยเสี่ยง ลดผลกระทบความรุนแรง)
+            </span>
           </div>
         </div>
       </div>

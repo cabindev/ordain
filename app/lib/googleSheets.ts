@@ -317,7 +317,7 @@ export async function testGoogleSheetsConnection() {
         availableSheets: sheetNames
       }
     };
-  } catch (error) {
+  } catch (error: any) { // กำหนดประเภทของ error เป็น any
     console.error('Error testing connection:', error);
     return {
       success: false,

@@ -1,6 +1,11 @@
 {
-  "/api/ordain/route": "app/api/ordain/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/ordain/debug/route": "app/api/ordain/debug/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/ordain/stats/page": "app/ordain/stats/page.js",
-  "/page": "app/page.js"
+  "/api/ordain/route": "app/api/ordain/route.js",
+  "/ordain/contact/page": "app/ordain/contact/page.js",
+  "/ordain/about/page": "app/ordain/about/page.js",
+  "/ordain/page": "app/ordain/page.js",
+  "/page": "app/page.js",
+  "/ordain/stats/page": "app/ordain/stats/page.js"
 }

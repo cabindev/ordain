@@ -13,6 +13,7 @@ import {
 } from 'echarts/components';
 import { BarChart } from 'echarts/charts';
 import { CanvasRenderer } from 'echarts/renderers';
+import type { EChartsOption } from 'echarts'; // เพิ่มการนำเข้า EChartsOption type
 
 // Register necessary components
 echarts.use([
@@ -28,6 +29,11 @@ type AlcoholReductionData = {
   total: string;
   templeEvents: string;
   communityEvents: string;
+};
+
+type ChartParams = {
+  name: string;
+  value: number;
 };
 
 export function AlcoholReductionBarChart({ data }: { data?: AlcoholReductionData }) {
@@ -47,7 +53,7 @@ export function AlcoholReductionBarChart({ data }: { data?: AlcoholReductionData
     const chart = echarts.init(chartRef.current);
     
     // กำหนดตัวเลือกการแสดงผลใหม่ให้สดใสขึ้น
-    const option = {
+    const option: EChartsOption = {
       title: {
         text: 'การลดการบริโภคเครื่องดื่มแอลกอฮอล์',
         textStyle: {
@@ -116,7 +122,7 @@ export function AlcoholReductionBarChart({ data }: { data?: AlcoholReductionData
           name: 'จำนวนงาน',
           type: 'bar',
           barWidth: '60%',
-          data: chartData.map((item, index) => ({
+          data: chartData.map((item) => ({
             value: item.value,
             itemStyle: {
               color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
