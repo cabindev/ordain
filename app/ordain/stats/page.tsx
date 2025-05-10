@@ -32,7 +32,7 @@ export default function OrdainStatsPage() {
                   <FaArrowLeft className="mr-2" /> กลับสู่หน้าหลัก
                 </Link>
                 <span className="inline-flex items-center px-4 py-2 bg-[var(--gold-primary)] bg-opacity-20 text-white text-base font-medium rounded-md">
-                  <FaChartBar className="mr-2" /> แสดงผลข้อมูลปี 2567
+                  <FaChartBar className="mr-2" /> แสดงผลข้อมูล
                 </span>
               </div>
             </div>
