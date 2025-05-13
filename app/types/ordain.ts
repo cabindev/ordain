@@ -41,6 +41,7 @@ export type OrdainData = {
     count: string; 
     unit: string 
   };
+  implementationProvinceCount?: string; // เพิ่ม field นี้เพื่อเก็บจำนวนจังหวัดที่ดำเนินการ
   regionalData?: RegionalData[];
   provinceData?: ProvinceData[];
   debug?: any;

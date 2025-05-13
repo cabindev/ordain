@@ -53,6 +53,7 @@ type OrdainData = {
     count: string; 
     unit: string 
   };
+  implementationProvinceCount?: string; 
   regionalData?: RegionalData[];
   provinceData?: ProvinceData[];
   debug?: any;
@@ -494,7 +495,7 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
                     </span>
                   </li>
                 )}
-                {hasValidProvinceData && (
+                {data.implementationProvinceCount && (
                   <li className="flex items-start">
                     <span className="flex-shrink-0 h-6 w-6 rounded-full bg-[var(--gold-primary)] flex items-center justify-center text-white text-xs mt-0.5">
                       ✓
@@ -502,7 +503,7 @@ export default function OrdainStats({ hideTitle = false }: { hideTitle?: boolean
                     <span className="ml-3 text-[var(--brown-primary)]">
                       พื้นที่ดำเนินการใน{" "}
                       <span className="font-semibold text-[var(--gold-dark)]">
-                        {data.provinceData!.length}
+                        {formatNumber(data.implementationProvinceCount)}
                       </span>{" "}
                       จังหวัดทั่วประเทศ
                     </span>
